@@ -1,0 +1,459 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: var(--project-background);
+}
+
+/* переменные */
+:root {
+    --brand-color: #2196f3;
+    --logo-web: #2196f3;
+    --logo-studio: #000000;
+    --text-black: #212121;
+    --text-gray: #757575;
+    --footer-tell-mail: #ffffff99;
+    --text-white: #ffffff;
+    --project-background: #ffffff;
+    --hero-background: #2f303a;
+    --hero-title: #ffffff;
+    --logo-studio-footer: #ffffff;
+    --background-footer: #2f303a;
+    --header-bottom-line: #ececec;
+    --btn-hover: #188ce8;
+    --border-btn-radius: 4px;
+    --border-portfolio-text-card: #eeeeee;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* ------------------------CSS-RESET------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+/* ---------------------------CONTAINER------------------- */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: solid rgb(0, 52, 112); */
+    margin: 0px auto;
+}
+
+/* ----------------------------LOGO, HEADER--- */
+.header {
+    border-bottom: 1px solid var(--header-bottom-line);
+}
+
+.logo-header {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--logo-web);
+}
+
+.logo-studio {
+    color: var(--logo-studio);
+}
+
+/* ----------------------------NAVIGATION */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-item + .header-item {
+    margin-left: 50px;
+}
+
+.header-contact-list {
+    margin-left: auto;
+}
+
+.contact-item + .contact-item {
+    margin-left: 50px;
+}
+
+.header-list,
+.header-contact-list {
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--text-black);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--brand-color);
+}
+
+/* ----------------------------CONTACT */
+.header-mail,
+.header-tell {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--text-gray);
+}
+
+.header-mail:focus,
+.header-mail:hover,
+.header-tell:focus,
+.header-tell:hover,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tell:hover,
+.footer-tell:focus {
+    color: var(--brand-color);
+}
+
+/* ----------------------------HERRO */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--hero-background);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--hero-title);
+
+    margin: 0 270px 30px;
+}
+
+.btn-hero {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border: transparent;
+    border-radius: var(--border-btn-radius);
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--project-background);
+    background-color: var(--brand-color);
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+    background-color: var(--btn-hover);
+}
+
+/* ----------------------------PERECULIARITES */
+.peculiarities {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.peculiarites-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.peculiarity-item {
+    width: calc(100% - 30px / 4);
+    /* margin-left: 30px; */
+    flex-wrap: wrap;
+}
+
+.peculiarity-item + .peculiarity-item {
+    margin-left: 30px;
+}
+
+.peculiarity-title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    color: var(--text-black);
+}
+
+.peculiarity-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--text-gray);
+}
+
+/* ----------------------------ABAUT US + TEAM*/
+.about {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-item + .about-item {
+    margin-left: 30px;
+}
+
+.about-team-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--text-black);
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.item-teammate + .item-teammate {
+    margin-left: 30px;
+}
+
+.teammate-name {
+    margin-bottom: 10px;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: var(--text-black);
+}
+
+.teammate-profession {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: var(--text-gray);
+}
+
+/* ----------------------------FOOTER */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--background-footer);
+}
+
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-studio-footer {
+    color: var(--logo-studio-footer);
+}
+
+.address,
+.footer-mail {
+    margin-bottom: 9px;
+}
+
+.address,
+.footer-mail,
+.footer-tell {
+    display: block;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Цвета как на макете */
+.address {
+    color: var(--project-background);
+}
+
+.footer-mail,
+.footer-tell {
+    color: #ffffff99;
+}
+
+/* ----------------------------ПОРТФОЛИО */
+/* фильтры-------- */
+
+.filtr-btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filtr-btn-item + .filtr-btn-item {
+    margin-left: 8px;
+}
+
+.btn-filtr {
+    border: transparent;
+    border-radius: var(--border-btn-radius);
+    padding: 10px 20px;
+    /* min-width: 73px;
+    height: 38px; */
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--text-black);
+    background-color: var(--project-background);
+}
+
+.btn-filtr:focus,
+.btn-filtr:hover {
+    color: var(--project-background);
+    background-color: var(--brand-color);
+}
+
+/* ---------сетка портфолио---------  */
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.gallery-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100%-50px) / 9);
+}
+
+/* bottons */
+.portfolio {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.gallery-text-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid var(--border-portfolio-text-card);
+    border-bottom: 1px solid var(--border-portfolio-text-card);
+    border-left: 1px solid var(--border-portfolio-text-card);
+}
+
+/* Portfolio-list */
+.gallery-title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--text-black);
+}
+
+.gallery-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    color: var(--text-gray);
+}
+
+/* СКРЫТЫЕ ЗАГОЛОВКИ */
+.fulse-title {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* not work------------------- !!!!!!!!!!!!!!!!!*/
+/* .footer-item, .logo-footer, .address  {
+    max-width: 235px;
+    max-width: 235px;
+} */
