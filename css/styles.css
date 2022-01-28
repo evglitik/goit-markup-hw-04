@@ -37,6 +37,7 @@ body {
     --portfolio-card-shadow-hower: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     --portfolio-filtr-shadof: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --btn-filtr-bacground: #F5F4FA;
 }
 
 .link {
@@ -304,11 +305,7 @@ img {
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.team-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: var(--bacground-team-section);
 }
 
 .team-list {
@@ -317,6 +314,7 @@ img {
 
 .item-teammate {
     box-shadow: var(--shadow-team-card);
+    background-color: #ffffff;
 }
 
 .item-teammate + .item-teammate {
@@ -347,11 +345,12 @@ img {
     color: var(--text-gray);
 }
 
-.team-container {
-    background-color: var(--bacground-team-section);
+/* -----team social link ----------- */
+.card-team-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-/* -----team social link ----------- */
 .team-socials-list {
     display: flex;
     justify-content: center;
@@ -384,7 +383,8 @@ img {
 
 /* ------------------CLIENTS--------------- */
 .clients {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .clients-title {
@@ -445,7 +445,7 @@ img {
 .btn-filtr {
     border: transparent;
     border-radius: var(--border-btn-radius);
-    padding: 10px 20px;
+    padding: 6px 22px;
     cursor: pointer;
 
     font-family: inherit;
@@ -454,7 +454,7 @@ img {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--text-black);
-    background-color: var(--project-background);
+    background-color: var(--btn-filtr-bacground);
 }
 
 .btn-filtr:focus,
